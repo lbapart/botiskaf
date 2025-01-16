@@ -1,7 +1,6 @@
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
-import LanguageSwitcher from "./language-switcher"
 
 export function SiteHeader() {
   return (
@@ -11,7 +10,6 @@ export function SiteHeader() {
           <MainNav />
           <MobileNav />
           <ModeSwitcher />
-          <LanguageSwitcher />
           <div className="flex flex-1 items-center justify-between gap-2 md:justify-end">
             <div className="flex items-center gap-0.5">
             </div>

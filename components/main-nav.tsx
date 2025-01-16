@@ -8,9 +8,11 @@ import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 import { docsConfig } from "@/config/docs"
 import { Button } from "@/components/ui/button"
+import { useTranslations } from "next-intl"
 
 export function MainNav() {
   const pathname = usePathname()
+  const t = useTranslations("NavBarLinks")
 
   return (
     <div className="mr-4 hidden md:flex">
@@ -35,7 +37,7 @@ export function MainNav() {
                 <Link
                   href={item.href}
                 >
-                  {item.title}
+                  {t(item.title)}
                 </Link>
               </Button>
             )

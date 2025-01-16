@@ -1,14 +1,11 @@
 import { AppProps } from 'next/app';
-import { LanguageProvider } from '@/context/LanguageContext';
-import RootLayout from '@/app/layout';
+import RootLayout from '@/app/[locale]/layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <LanguageProvider>
-      <RootLayout>
+      <RootLayout params={{ locale: 'en' }}>
         <Component {...pageProps} />
       </RootLayout>
-    </LanguageProvider>
   );
 }
 
