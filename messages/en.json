@@ -1,6 +1,9 @@
 {
     "NavBarLinks": {
         "main": "Main",
-        "commands": "Commands"
+        "commands": "Commands",
+        "faq": "FAQ",
+        "support": "Support",
+        "pricing": "Pricing"
     }
 }

@@ -1,6 +1,9 @@
 {
     "NavBarLinks": {
         "main": "Главная",
-        "commands": "Команды"
+        "commands": "Команды",
+        "faq": "FAQ",
+        "support": "Поддержка",
+        "pricing": "Цены"
     }
 }

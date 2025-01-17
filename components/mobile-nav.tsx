@@ -13,11 +13,17 @@ import {
   DrawerContent,
   DrawerTrigger,
 } from "@/registry/new-york/ui/drawer"
+import { useTranslations } from "next-intl"
 
-export function MobileNav() {
+interface MobileNavProps {
+  locale: string;
+}
+
+export function MobileNav({ locale }: MobileNavProps) {
   const [open, setOpen] = React.useState(false)
   const { setMetaColor, metaColor } = useMetaColor()
-  const pathname = usePathname()
+  const pathname = usePathname()?.replace(/\/[a-z]{2}/, "")
+  const t = useTranslations("NavBarLinks")
 
   const onOpenChange = React.useCallback(
     (open: boolean) => {
@@ -67,10 +73,10 @@ export function MobileNav() {
                   >
                     <MobileLink
                       key={item.href}
-                      href={item.href}
+                      href={`/${locale}${item.href}`}
                       onOpenChange={setOpen}
                     >
-                      {item.title}
+                      {t(item.title)}
                     </MobileLink>
                   </Button>
                 )

@@ -15,5 +15,17 @@ export const docsConfig: DocsConfig = {
       title: "commands",
       href: "/commands",
     },
+    {
+      title: "faq",
+      href: "/faq",
+    },
+    {
+      title: "support",
+      href: "/support",
+    },
+    {
+      title: "pricing",
+      href: "/pricing",
+    }
   ]
 }

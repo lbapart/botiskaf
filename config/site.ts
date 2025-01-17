@@ -1,13 +1,9 @@
 export const siteConfig = {
-  name: "shadcn/ui",
-  url: "https://ui.shadcn.com",
-  ogImage: "https://ui.shadcn.com/og.jpg",
+  name: "Botiskaf",
+  url: "https://botiskaf.com",
+  ogImage: "../app/favicon.ico",
   description:
-    "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
-  links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn-ui/ui",
-  },
+    "Crypto bot for trading on Kucoin.",
 }
 
 export type SiteConfig = typeof siteConfig
