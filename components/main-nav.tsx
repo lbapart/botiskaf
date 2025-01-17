@@ -15,7 +15,7 @@ interface MainNavProps {
 
 export function MainNav({ locale }: MainNavProps) {
   // Get the current pathname without the locale prefix
-  const pathname = usePathname()?.replace(/\/[a-z]{2}/, "")
+  const pathname = usePathname()?.replace(/^\/[a-z]{2}(\/)?/, "/")
   const t = useTranslations("NavBarLinks")
 
   return (

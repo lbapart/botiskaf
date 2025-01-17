@@ -22,7 +22,7 @@ interface MobileNavProps {
 export function MobileNav({ locale }: MobileNavProps) {
   const [open, setOpen] = React.useState(false)
   const { setMetaColor, metaColor } = useMetaColor()
-  const pathname = usePathname()?.replace(/\/[a-z]{2}/, "")
+  const pathname = usePathname()?.replace(/^\/[a-z]{2}(\/)?/, "/")
   const t = useTranslations("NavBarLinks")
 
   const onOpenChange = React.useCallback(
@@ -32,7 +32,8 @@ export function MobileNav({ locale }: MobileNavProps) {
     },
     [setMetaColor, metaColor]
   )
-
+  console.log(pathname)
+  console.log(usePathname())
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerTrigger asChild>
