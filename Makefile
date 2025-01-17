@@ -1,8 +1,8 @@
 run:
-	@docker-compose up -d --build frontend
+	@docker-compose up -d --build nginx frontend
 
 debug:
-	@docker-compose up --build --no-deps frontend
+	@docker-compose up --build --no-deps nginx_test frontend_test
 
 stop:
 	@docker-compose down
