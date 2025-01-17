@@ -19,10 +19,10 @@ export default function MainPage() {
                 <ul className="list-disc ml-6 mt-2 space-y-2">
                   <li>
                     <strong>
-                      <a href="https://t.me/BotiskafTON_bot" target="_blank" rel="noopener noreferrer">
+                      <a href="https://t.me/BotiskafTON_bot" target="_blank" rel="noopener noreferrer" className="text-accent-foreground underline">
                         Бот Botiskaf (@BotiskafTON_bot)
                       </a>
-                    </strong> для автоматизации торговли на бирже <strong><a href="https://www.kucoin.com/r/rf/QBSWD41C" target="_blank" rel="noopener noreferrer">Kucoin</a></strong>.
+                    </strong> для автоматизации торговли на бирже <strong><a href="https://www.kucoin.com/r/rf/QBSWD41C" target="_blank" rel="noopener noreferrer" className="text-accent-foreground underline">Kucoin</a></strong>.
                   </li>
                 </ul>
               </CardContent>
