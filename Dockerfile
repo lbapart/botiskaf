@@ -6,9 +6,10 @@ COPY package.json package-lock.json ./
 
 COPY . .
 
-#RUN npm install --verbose
-#RUN npm run build --verbose
+RUN npm install --verbose
+RUN npm run build --verbose
 
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+#CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
