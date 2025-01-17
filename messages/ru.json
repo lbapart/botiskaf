@@ -3,7 +3,7 @@
         "main": "Главная",
         "commands": "Команды",
         "faq": "FAQ",
-        "support": "Поддержка",
-        "pricing": "Цены"
+        "pricing": "Цены",
+        "useful-info": "Полезная информация"
     }
 }

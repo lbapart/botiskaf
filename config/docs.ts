@@ -20,12 +20,12 @@ export const docsConfig: DocsConfig = {
       href: "/faq",
     },
     {
-      title: "support",
-      href: "/support",
-    },
-    {
       title: "pricing",
       href: "/pricing",
-    }
+    },
+    {
+      title: "useful-info",
+      href: "/useful-info",
+    },
   ]
 }

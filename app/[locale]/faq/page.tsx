@@ -5,7 +5,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 const faqs = [
   { 
     question: "Как начать пользоваться ботом?", 
-    answer: "Для начала работы с ботом зарегистрируйтесь на платформе Kucoin, пройдите KYC и подключите двойную аутентификацию. Затем создайте API ключ с разрешениями на спотовую торговлю. После этого укажите ваши торговые настройки и API ключи в боте и активируйте торговлю."
+    answer: "Для начала работы с ботом зарегистрируйтесь на платформе Kucoin, пройдите KYC и подключите двойную аутентификацию. Затем создайте API ключ (на текущий момент это возможно сделать только в Desktop версии биржи Kucoin) с разрешениями на спотовую торговлю. После этого укажите ваши торговые настройки и API ключи в боте и активируйте торговлю."
   },
   { 
     question: "Безопасно ли делиться с вами API данными?", 
@@ -59,8 +59,8 @@ export default function FAQPage() {
               <Accordion type="single" collapsible className="space-y-4 w-full">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`faq-${index}`} className="w-full min-w-full">
-                    <AccordionTrigger className="w-full text-left italic font-bold">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="w-full text-left">{faq.answer}</AccordionContent>
+                    <AccordionTrigger className="w-full text-left px-4 italic font-bold">{faq.question}</AccordionTrigger>
+                    <AccordionContent className="w-full text-left px-4">{faq.answer}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>

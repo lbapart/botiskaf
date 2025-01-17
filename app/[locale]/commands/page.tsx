@@ -17,6 +17,7 @@ const commands = [
   { id: "stop_trading", title: "/stop_trading", description: "Останавливает торговлю." },
   { id: "set_language", title: "/set_language", description: "Позволяет выбрать язык взаимодействия с ботом." },
   { id: "buy_coin", title: "/buy_coin", description: "Выполняет покупку криптовалюты на определённую сумму." },
+  { id: "help", title: "/help", description: "Показывает контактные данные для связи с поддержкой." },
 ];
 
 export default function CommandsPage() {
