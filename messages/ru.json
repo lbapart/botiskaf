@@ -117,5 +117,21 @@
     "our_referal_link": "по нашей реферальной ссылке.",
     "to_get_trial": "Для получения пробной подписки, пожалуйста, обратитесь в нашу ",
     "support_at_telegram": "поддержку в Telegram."
+  },
+
+  "UsefulInfoPage": {
+    "recommended_settigs": "Рекомендованные настройки",
+    "here": "Здесь",
+    "settings_description": "указывает сумму покупки, которую вы указываете в настройках. Например, если вы выберете сумму покупки 5 USDT, ваш рекомендуемый депозит будет от 200 USDT до 250 USDT.",
+    "buy_amount": "Сумма покупки",
+    "deposit": "Депозит",
+    "from": "от",
+    "to": "до",
+    "profit_percent": "Процент прибыли",
+    "step_percent": "Процент шага",
+    "useful_links": "Полезные ссылки",
+    "register_on_kucoin": "Регистрация на Kucoin",
+    "telegram_bot_botiskaf": "Telegram-бот Botiskaf",
+    "support_at_telegram": "Поддержка в Telegram"
   }
 }

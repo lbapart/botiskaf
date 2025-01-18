@@ -116,5 +116,21 @@
     "our_referal_link": "through our referral link.",
     "to_get_trial": "To get a trial subscription, please contact our ",
     "support_at_telegram": "support in Telegram."
+  },
+
+  "UsefulInfoPage": {
+    "recommended_settigs": "Recommended Settings",
+    "here": "Here",
+    "settings_description": "indicates the purchase amount you specify in the settings. For example, if you choose a purchase amount of 5 USDT, your recommended deposit will be between 200 USDT and 250 USDT.",
+    "buy_amount": "Purchase amount",
+    "deposit": "Deposit",
+    "from": "from",
+    "to": "to",
+    "profit_percent": "Profit percent",
+    "step_percent": "Step percent",
+    "useful_links": "Useful links",
+    "register_on_kucoin": "Register on Kucoin",
+    "telegram_bot_botiskaf": "Telegram bot Botiskaf",
+    "support_at_telegram": "Support in Telegram"
   }
 }

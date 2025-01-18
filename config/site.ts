@@ -21,4 +21,5 @@ export const languages = [
 export const links = {
   bot_link: "https://t.me/BotiskafTON_bot",
   kucoin_link: "https://www.kucoin.com/r/rf/QBSWD41C",
+  support_link: "https://t.me/lbapart",
 }

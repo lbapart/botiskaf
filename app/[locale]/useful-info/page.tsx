@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { getMessages } from "next-intl/server";
 import { Messages } from "@/types/messages";
+import { useTranslations } from "next-intl";
+import { links } from "@/config/site";
 
 export async function generateMetadata({
   params: { locale },
@@ -28,6 +30,8 @@ export async function generateMetadata({
 }
 
 export default function UsefulInformationPage() {
+  const t = useTranslations("UsefulInfoPage");
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-start bg-white text-gray-800">
       {/* Main Content */}
@@ -36,17 +40,17 @@ export default function UsefulInformationPage() {
           {/* Рекомендованные настройки */}
           <Card className="bg-white border border-gray-200 shadow-sm rounded-lg">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold">Рекомендованные настройки</CardTitle>
+              <CardTitle className="text-2xl font-bold">{t("recommended_settigs")}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="mb-4 text-sm text-gray-600">
-                Здесь <strong>X</strong> обозначает сумму покупки, которую вы указываете в настройках. Например, если вы выбрали сумму покупки 5 USDT, то ваш рекомендуемый депозит будет от 200 USDT до 250 USDT.
+                {t("here")} <strong>X</strong> {t("settings_description")}
               </p>
               <ul className="list-disc ml-6 mt-2 space-y-2">
-                <li>Сумма покупки: <strong>X USDT</strong></li>
-                <li>Депозит: <strong> от 40 * X до 50 * X USDT</strong></li>
-                <li>Процент прибыли: <strong>0.7%</strong></li>
-                <li>Шаг покупки: <strong>1%</strong></li>
+                <li>{t("buy_amount")}: <strong>X USDT</strong></li>
+                <li>{t("deposit")}: <strong> {t("from")} 40 * X {t("to")} 50 * X USDT</strong></li>
+                <li>{t("profit_percent")}: <strong>0.7%</strong></li>
+                <li>{t("step_percent")}: <strong>1%</strong></li>
               </ul>
             </CardContent>
           </Card>
@@ -56,38 +60,38 @@ export default function UsefulInformationPage() {
           {/* Полезные ссылки */}
           <Card className="bg-white border border-gray-200 shadow-sm rounded-lg">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold">Полезные ссылки</CardTitle>
+              <CardTitle className="text-2xl font-bold">{t("useful_links")}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="list-disc ml-6 mt-2 space-y-2">
                 <li>
                   <a 
-                    href="https://www.kucoin.com/r/rf/QBSWD41C" 
+                    href={links.kucoin_link}
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-accent-foreground underline"
                   >
-                    Регистрация на Kucoin
+                    {t("register_on_kucoin")}
                   </a>
                 </li>
                 <li>
                   <a 
-                    href="https://t.me/BotiskafTON_bot" 
+                    href={links.bot_link}
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-accent-foreground underline"
                   >
-                    Telegram-бот Botiskaf
+                    {t("telegram_bot_botiskaf")}
                   </a>
                 </li>
                 <li>
                   <a 
-                    href="https://t.me/lbapart" 
+                    href={links.support_link}
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-accent-foreground underline"
                   >
-                    Поддержка в Telegram
+                    {t("support_at_telegram")}
                   </a>
                 </li>
               </ul>
