@@ -94,6 +94,16 @@ export default function UsefulInformationPage() {
                     {t("support_at_telegram")}
                   </a>
                 </li>
+                <li>
+                  <a 
+                    href={links.telgram_channel_link}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-accent-foreground underline"
+                  >
+                    {t("telegram_channel")}
+                  </a>
+                </li>
               </ul>
             </CardContent>
           </Card>
