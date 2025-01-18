@@ -39,7 +39,7 @@ export default function UsefulInformationPage() {
                     href="https://www.kucoin.com/r/rf/QBSWD41C" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline"
+                    className="text-accent-foreground underline"
                   >
                     Регистрация на Kucoin
                   </a>
@@ -49,7 +49,7 @@ export default function UsefulInformationPage() {
                     href="https://t.me/BotiskafTON_bot" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline"
+                    className="text-accent-foreground underline"
                   >
                     Telegram-бот Botiskaf
                   </a>
@@ -59,7 +59,7 @@ export default function UsefulInformationPage() {
                     href="https://t.me/lbapart" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline"
+                    className="text-accent-foreground underline"
                   >
                     Поддержка в Telegram
                   </a>
