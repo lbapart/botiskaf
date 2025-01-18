@@ -1,6 +1,8 @@
 import React from "react";
 import { getMessages } from "next-intl/server";
 import { Messages } from "@/types/messages";
+import { useTranslations } from "next-intl";
+import { links } from "@/config/site";
 
 export async function generateMetadata({
   params: { locale },
@@ -30,15 +32,16 @@ export default function PricingPage() {
   const monthlyPrice = 20; // Базовая цена за месяц
   const threeMonthsPrice = monthlyPrice * 3 * 0.9; // Скидка 10% за 3 месяца
   const sixMonthsPrice = monthlyPrice * 6 * 0.85; // Скидка 15% за 6 месяцев
+  const t = useTranslations("PricingPage");
 
   return (
     <>
       <div className="min-h-screen flex flex-col items-center justify-start bg-white text-gray-800">
         <main className="max-w-4xl mx-auto w-full space-y-8 mt-8 px-4">
           <section className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Цены</h1>
+            <h1 className="text-4xl font-bold mb-4">{t("title")}</h1>
             <p className="text-lg text-gray-600 mb-8">
-              Выберите подходящий тарифный план для доступа к нашему боту.
+              {t("page_description")}
             </p>
             {/* Таблица цен */}
             <div className="overflow-x-auto">
@@ -51,15 +54,15 @@ export default function PricingPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-gray-300 px-6 py-3">1 месяц</td>
+                    <td className="border border-gray-300 px-6 py-3">{t("one_month")}</td>
                     <td className="border border-gray-300 px-6 py-3">${monthlyPrice.toFixed(2)}</td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-300 px-6 py-3">3 месяца (скидка 10%)</td>
+                    <td className="border border-gray-300 px-6 py-3">{t("three_months")} ({t("discount")} 10%)</td>
                     <td className="border border-gray-300 px-6 py-3">${threeMonthsPrice.toFixed(2)}</td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-300 px-6 py-3">6 месяцев (скидка 15%)</td>
+                    <td className="border border-gray-300 px-6 py-3">{t("six_months")} ({t("discount")} 15%)</td>
                     <td className="border border-gray-300 px-6 py-3">${sixMonthsPrice.toFixed(2)}</td>
                   </tr>
                 </tbody>
@@ -70,38 +73,38 @@ export default function PricingPage() {
           <section className="text-center">
             {/* Ссылка на бота */}
             <p className="text-lg">
-              Покупка подписки осуществляется в нашем Telegram-боте:{" "}
+              {t("additional_info_one")}
               <a
-                href="https://t.me/BotiskafTON_bot"
+                href={links.bot_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent-foreground underline"
               >
-                Botiskaf (@BotiskafTON_bot)
+                {t("botiskaf")}
               </a>
             </p>
             {/* Информация о пробной подписке */}
             <div className="mt-6">
               <p className="text-gray-700">
-                <strong>Пробная подписка</strong> на 7 дней доступна бесплатно, если вы зарегистрировались на Kucoin{" "}
+                <strong>{t("trial_subscription")}</strong> {t("trial_subscription_description")}
                 <a
-                  href="https://www.kucoin.com/r/rf/QBSWD41C"
+                  href={links.kucoin_link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent-foreground underline"
                 >
-                  по нашей реферальной ссылке.
+                  {t("our_referal_link")}
                 </a>
               </p>
               <p className="text-gray-700 mt-2">
-                Для получения пробной подписки, пожалуйста, обратитесь в нашу{" "}
+                {t("to_get_trial")}
                 <a
                   href="https://t.me/lbapart"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent-foreground underline"
                 >
-                  поддержку в Telegram
+                  {t("support_at_telegram")}
                 </a>.
               </p>
             </div>

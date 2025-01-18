@@ -101,5 +101,20 @@
     "what_is_profit_answer": "The profitability of the bot depends on many factors, such as market volatility, trading settings, trading volume, etc. We cannot guarantee profit, but the average income of our users is about 10% per month from the deposit, which corresponds to 120% per year.",
     "did_not_find_an_answer": "Where can I go if I didn't find an answer to my question?",
     "did_not_find_an_answer_answer": "If you didn't find an answer to your question, please contact our support team for assistance."
+  },
+
+  "PricingPage": {
+    "title": "Pricing",
+    "page_description": "Choose a suitable pricing plan to access our bot.",
+    "one_month": "1 month",
+    "three_months": "3 months",
+    "six_months": "6 months",
+    "additional_info_one": "Subscription purchase is done through our Telegram bot: ",
+    "botiskaf": "Botiskaf (@BotiskafTON_bot)",
+    "trial_subscription": "Trial subscription",
+    "trial_subscription_description": "available for free for 7 days if you registered on Kucoin ",
+    "our_referal_link": "through our referral link.",
+    "to_get_trial": "To get a trial subscription, please contact our ",
+    "support_at_telegram": "support in Telegram."
   }
 }
