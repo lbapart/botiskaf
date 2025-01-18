@@ -3,6 +3,32 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { getMessages } from "next-intl/server";
+import { Messages } from "@/types/messages";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const messages = await getMessages({ locale }) as Messages;
+  const title = messages.NavBarLinks["commands"];
+  const description = messages.NavBarLinks["commands_description"];
+  const keywords = messages.NavBarLinks["commands_keywords"];
+
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      url: `https://botiskaf.com/${locale}/commands`,
+      type: 'website',
+      locale,
+    },
+  };
+}
 
 const commands = [
   { id: "start", title: "/start", description: "Старт работы с Telegram ботом." },

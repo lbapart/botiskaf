@@ -1,6 +1,31 @@
 import React from "react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-// import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { getMessages } from "next-intl/server";
+import { Messages } from "@/types/messages";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const messages = await getMessages({ locale }) as Messages;
+  const title = messages.NavBarLinks["faq"];
+  const description = messages.NavBarLinks["faq_description"];
+  const keywords = messages.NavBarLinks["faq_keywords"];
+
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      url: `https://botiskaf.com/${locale}/faq`,
+      type: 'website',
+      locale,
+    },
+  };
+}
 
 const faqs = [
   { 

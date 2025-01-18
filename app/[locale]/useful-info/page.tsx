@@ -1,5 +1,31 @@
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { getMessages } from "next-intl/server";
+import { Messages } from "@/types/messages";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const messages = await getMessages({ locale }) as Messages;
+  const title = messages.NavBarLinks["useful-info"];
+  const description = messages.NavBarLinks["useful-info_description"];
+  const keywords = messages.NavBarLinks["useful-info_keywords"];
+
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      url: `https://botiskaf.com/${locale}/useful-info`,
+      type: 'website',
+      locale,
+    },
+  };
+}
 
 export default function UsefulInformationPage() {
   return (

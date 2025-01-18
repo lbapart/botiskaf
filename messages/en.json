@@ -1,9 +1,23 @@
 {
-    "NavBarLinks": {
-        "main": "Main",
-        "commands": "Commands",
-        "faq": "FAQ",
-        "pricing": "Pricing",
-        "useful-info": "Useful information"
-    }
+  "NavBarLinks": {
+    "main": "Main",
+    "main_description": "Explore the main page of Botiskaf, your ultimate crypto trading assistant. Learn more about its features and benefits.",
+    "main_keywords": "Botiskaf, crypto trading bot, main page, home, crypto bot, trading assistant",
+
+    "commands": "Commands",
+    "commands_description": "Discover all the commands and functionalities of Botiskaf for seamless crypto trading automation.",
+    "commands_keywords": "Botiskaf commands, crypto trading commands, trading automation, bot commands, trading bot functionalities",
+
+    "faq": "FAQ",
+    "faq_description": "Find answers to frequently asked questions about Botiskaf, its strategies, and features.",
+    "faq_keywords": "Botiskaf FAQ, crypto bot FAQ, trading bot questions, frequently asked questions, Botiskaf support",
+
+    "pricing": "Pricing",
+    "pricing_description": "Learn about Botiskaf's pricing plans and find the best option for your crypto trading needs.",
+    "pricing_keywords": "Botiskaf pricing, trading bot pricing, crypto bot plans, affordable trading bot, Botiskaf costs",
+
+    "useful-info": "Useful information",
+    "useful-info_description": "Get valuable tips, resources, and guides on using Botiskaf and improving your crypto trading.",
+    "useful-info_keywords": "crypto trading tips, Botiskaf resources, trading guides, crypto bot information, useful crypto resources"
+  }
 }
