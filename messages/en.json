@@ -19,5 +19,35 @@
     "useful-info": "Useful information",
     "useful-info_description": "Get valuable tips, resources, and guides on using Botiskaf and improving your crypto trading.",
     "useful-info_keywords": "crypto trading tips, Botiskaf resources, trading guides, crypto bot information, useful crypto resources"
+  },
+
+  "MainPage": {
+    "title": "Main",
+    "welcome_message": "Welcome to the world of automated trading!",
+    "our_bot": "Our bot",
+    "bot_name": "Bot Botiskaf (@BotiskafTON_bot)",
+    "for_automated_trading": "for automated trading on the exchange",
+    "kucoin": "KuCoin",
+
+    "features": "Features",
+    "features_bullet_one": "Automatic buys and sells",
+    "features_bullet_two": "Adaptive settings",
+    "features_bullet_three": "Real-time trade notifications",
+    "features_bullet_four": "Regular updates",
+
+    "why_us": "Why choose us?",
+    "why_us_bullet_one_part_one": "Small team, personal approach",
+    "why_us_bullet_one_part_two": ": We're not a huge corporation, so we pay attention to details and consider user needs",
+    "why_us_bullet_two_part_one": "Focus on efficiency",
+    "why_us_bullet_two_part_two": ": Our bot is designed for maximum simplicity and productivity",
+    "why_us_bullet_three_part_one": "Continuous development",
+    "why_us_bullet_three_part_two": ": We're constantly working on improving and adding new features",
+    "why_us_bullet_four_part_one": "Transparency and openness",
+    "why_us_bullet_four_part_two": ": We're honest with our users and open to feedback and suggestions",
+    "why_us_bullet_five_part_one": "Accessibility",
+    "why_us_bullet_five_part_two": ": Our bot is suitable for both beginners and experienced traders",
+
+    "about_us": "About us",
+    "about_us_description": "We are a small team of developers and enthusiasts united by the desire to create convenient and efficient tools for successful trading. Over the years in the crypto space, we have accumulated valuable experience and are happy to share our developments with you."
   }
 }

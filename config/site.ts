@@ -17,3 +17,8 @@ export const languages = [
   { code: "en", label: "🇬🇧English" },
   { code: "ru", label: "🇷🇺Русский" },
 ];
+
+export const links = {
+  bot_link: "https://t.me/BotiskafTON_bot",
+  kucoin_link: "https://www.kucoin.com/r/rf/QBSWD41C",
+}

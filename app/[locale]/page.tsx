@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import { getMessages } from "next-intl/server";
 import { Messages } from "@/types/messages";
+import { useTranslations } from "next-intl";
+import { links } from "@/config/site";
 
 export async function generateMetadata({
   params: { locale },
@@ -28,6 +30,8 @@ export async function generateMetadata({
 }
 
 export default function MainPage() {
+  const t = useTranslations("MainPage");
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-800">
       {/* Main Content */}
@@ -36,59 +40,59 @@ export default function MainPage() {
         <section>
           <Card className="bg-white border-none shadow-none">
             <div className="py-6 text-center">
-              <h1 className="text-4xl font-bold">Главная</h1>
-              <p className="mt-2 text-lg">Добро пожаловать в мир автоматической торговли!</p>
+              <h1 className="text-4xl font-bold">{t("title")}</h1>
+              <p className="mt-2 text-lg">{t("welcome_message")}</p>
             </div>
             <CardHeader>
-              <CardTitle>Наш бот</CardTitle>
+              <CardTitle>{t("our_bot")}</CardTitle>
               <CardContent>
                 <ul className="list-disc ml-6 mt-2 space-y-2">
                   <li>
-                    <a href="https://t.me/BotiskafTON_bot" target="_blank" rel="noopener noreferrer" className="text-accent-foreground underline">
-                      Бот Botiskaf (@BotiskafTON_bot)
+                    <a href={links.bot_link} target="_blank" rel="noopener noreferrer" className="text-accent-foreground underline">
+                     {t("bot_name")}
                     </a>
-                    для автоматизации торговли на бирже <a href="https://www.kucoin.com/r/rf/QBSWD41C" target="_blank" rel="noopener noreferrer" className="text-accent-foreground underline">Kucoin</a>.
+                    {" "}{t("for_automated_trading")} <a href={links.kucoin_link} target="_blank" rel="noopener noreferrer" className="text-accent-foreground underline">{t("kucoin")}</a>.
                   </li>
                 </ul>
               </CardContent>
             </CardHeader>
             <CardHeader>
-              <CardTitle>Особенности</CardTitle>
+              <CardTitle>{t("features")}</CardTitle>
               <CardContent>
                 <ul className="list-disc ml-6 mt-2 space-y-2">
-                  <li>Автоматические покупки и продажи.</li>
-                  <li>Адаптивные настройки</li>
-                  <li>Уведомления о сделках в реальном времени</li>
-                  <li>Регулярные обновления</li>
+                  <li>{t("features_bullet_one")}</li>
+                  <li>{t("features_bullet_two")}</li>
+                  <li>{t("features_bullet_three")}</li>
+                  <li>{t("features_bullet_four")}</li>
                 </ul>
               </CardContent>
             </CardHeader>
             <CardHeader>
-              <CardTitle>Почему стоит выбрать нас?</CardTitle>
+              <CardTitle>{t("why_us")}</CardTitle>
               <CardContent>
                 <ul className="list-disc ml-6 mt-2 space-y-2">
                   <li>
-                    <strong>Небольшая команда, личный подход</strong>: Мы не огромная корпорация, поэтому уделяем внимание деталям и учитываем потребности пользователей.
+                    <strong>{t("why_us_bullet_one_part_one")}</strong>{t("why_us_bullet_one_part_two")}
                   </li>
                   <li>
-                    <strong>Фокус на эффективности</strong>: Наш бот разработан для максимальной простоты и продуктивности.
+                    <strong>{t("why_us_bullet_two_part_one")}</strong>{t("why_us_bullet_two_part_two")}
                   </li>
                   <li>
-                    <strong>Постоянное развитие</strong>: Мы постоянно работаем над улучшением и добавлением новых функций.
+                    <strong>{t("why_us_bullet_three_part_one")}</strong>{t("why_us_bullet_three_part_two")}
                   </li>
                   <li>
-                    <strong>Прозрачность и открытость</strong>: Мы честны с нашими пользователями и открыты к обратной связи и предложениям.
+                    <strong>{t("why_us_bullet_four_part_one")}</strong>{t("why_us_bullet_four_part_two")}
                   </li>
                   <li>
-                    <strong>Доступность</strong>: Наш бот подойдет как новичкам, так и опытным трейдерам.
+                    <strong>{t("why_us_bullet_five_part_one")}</strong>{t("why_us_bullet_five_part_two")}
                   </li>
                 </ul>
               </CardContent>
             </CardHeader>
             <CardHeader>
-              <CardTitle>О нас</CardTitle>
+              <CardTitle>{t("about_us")}</CardTitle>
               <CardContent>
-                Мы - небольшая команда разработчиков и энтузиастов, объединённых стремлением создать удобные и эффективные инструменты для успешной торговли. За годы работы в сфере криптовалют мы накопили ценный опыт и рады делиться своими разработками с вами.
+                {t("about_us_description")}
               </CardContent>
             </CardHeader>
           </Card>
