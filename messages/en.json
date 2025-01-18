@@ -49,5 +49,33 @@
 
     "about_us": "About us",
     "about_us_description": "We are a small team of developers and enthusiasts united by the desire to create convenient and efficient tools for successful trading. Over the years in the crypto space, we have accumulated valuable experience and are happy to share our developments with you."
+  },
+
+  "CommandsPage": {
+    "title": "Commands",
+    "start_description":  "Get started with the Telegram bot.",
+    "update_api_keys_description": "Allows you to update API keys for connecting to the exchange. Keys will only be updated when all three values are changed to new ones.",
+    "get_api_details_description": "Shows the current API keys you've used for connection.",
+    "update_trade_settings_description": "Allows you to change the settings of your trading strategy.",
+    "get_trade_settings_description": "Displays your current trading parameters.",
+    "cancel_description": "Cancels the current action and returns you to the main menu.",
+    "get_subscription_status_description": "Shows the status of your subscription and its expiration date.",
+    "renew_subscription_description": "Allows you to renew your subscription. Renewal is possible no earlier than 3 weeks before the end of the current subscription.",
+    "start_trading_description": "Starts the trading process with the current settings.",
+    "stop_trading_description": "Stops the trading process.",
+    "set_language_description": "Allows you to choose the language for interacting with the bot.",
+    "buy_coin_description": "Performs a purchase of cryptocurrency for a specific amount at the current rate.",
+    "buy_coin_description_additional": "The bot will ask you to enter the purchase amount in USDT.",
+    "help_description": "Shows contact details for support.",
+    "minimal_value": "Minimal value",
+    "maximum_value": "Maximum value",
+    "current_balance": "Current balance",
+    "current_balance_description": "the amount in USDT that the bot can use to make trades.",
+    "profit_percent": "Profit percent",
+    "profit_percent_description": "The percentage that the bot will use to calculate the selling price from the purchase price.",
+    "step_percent": "Step percent",
+    "step_percent_description": "The percentage that the bot will use to calculate the purchase price from the last purchase/sale price.",
+    "buy_amount": "Purchase amount",
+    "buy_amount_description": "The amount in USDT that the bot can use to make trades."
   }
 }
