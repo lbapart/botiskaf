@@ -77,5 +77,29 @@
     "step_percent_description": "The percentage that the bot will use to calculate the purchase price from the last purchase/sale price.",
     "buy_amount": "Purchase amount",
     "buy_amount_description": "The amount in USDT that the bot can use to make trades."
+  },
+
+  "FAQPage": {
+    "title": "Frequently Asked Questions",
+    "how_to_start": "How to start using the bot?",
+    "how_to_start_answer": "To start using the bot, register on the Kucoin platform, complete KYC, and enable two-factor authentication. Then create an API key (currently only possible in the desktop version of the Kucoin exchange) with permissions for spot trading. After that, specify your trading settings and API keys in the bot and start trading.",
+    "is_it_safe": "Is it safe to share my API data with you?",
+    "is_it_safe_answer": "Yes, it is safe to share your API data with us. We take security seriously and use encryption to protect your information. Your API keys are stored securely and are only used for trading purposes. We do not have access to your funds or personal information.",
+    "which_strategy": "What trading strategy does the bot use?",
+    "which_strategy_answer": "The Botiskaf bot uses the Enhanced Grid Trading strategy. This strategy builds a chain of limit buy and sell orders, optimally utilizing market fluctuations. After one order is executed, a new one is automatically created with a recalculated price level. This approach allows for profit extraction both during market rises and falls, ensuring constant trading participation. Unlike the classic grid, the bot dynamically adapts order levels to current market conditions, making the strategy more effective in high volatility environments.",
+    "which_coins": "Which coins does the bot trade?",
+    "which_coins_answer": "Currently, the bot only trades the TON-USDT pair on the Kucoin exchange. In the future, new trading pairs are planned to be added.",
+    "why_kucoin": "Why Kucoin?",
+    "why_kucoin_answer": "Kucoin is a reliable exchange with low fees and a wide selection of trading pairs. It provides a convenient and reliable API, making it an excellent choice for automated trading.",
+    "can_i_close_orders": "Can I cancel orders placed by the bot?",
+    "can_i_close_orders_answer": "Yes, you can cancel active orders through the Kucoin exchange, but we strongly recommend not interfering with the bot's operation as it may lead to undesirable results.",
+    "what_risks": "What are the risks of using the bot?",
+    "what_risks_answer": "As with any financial operations, cryptocurrency trading involves risks. In our case, the worst scenario is converting USDT into a coin that drops in value. However, thanks to the Enhanced Grid Trading strategy, the bot can profit from both market rises and falls, reducing risks and increasing the likelihood of long-term profits. We also recommend specifying a purchase amount that would divide your deposit into 40-50 parts to minimize risks and increase the chances of making a profit.",
+    "what_commission": "What commissions does the bot charge?",
+    "what_commission_answer": "We do not charge any fees for using the bot. All trading-related fees are charged by the Kucoin exchange.",
+    "what_is_profit": "What is the profitability of the bot?",
+    "what_is_profit_answer": "The profitability of the bot depends on many factors, such as market volatility, trading settings, trading volume, etc. We cannot guarantee profit, but the average income of our users is about 10% per month from the deposit, which corresponds to 120% per year.",
+    "did_not_find_an_answer": "Where can I go if I didn't find an answer to my question?",
+    "did_not_find_an_answer_answer": "If you didn't find an answer to your question, please contact our support team for assistance."
   }
 }
