@@ -83,7 +83,7 @@
     "title": "Frequently Asked Questions",
     "how_to_start": "How to start using the bot?",
     "how_to_start_answer": "To start using the bot, register on the Kucoin platform, complete KYC, and enable two-factor authentication. Then create an API key (currently only possible in the desktop version of the Kucoin exchange) with permissions for spot trading. After that, specify your trading settings and API keys in the bot and start trading.",
-    "is_it_safe": "Is it safe to share my API data with you?",
+    "is_it_safe": "Is it safe to share my API data with our bot?",
     "is_it_safe_answer": "Yes, it is safe to share your API data with us. We take security seriously and use encryption to protect your information. Your API keys are stored securely and are only used for trading purposes. We do not have access to your funds or personal information.",
     "which_strategy": "What trading strategy does the bot use?",
     "which_strategy_answer": "The Botiskaf bot uses the Enhanced Grid Trading strategy. This strategy builds a chain of limit buy and sell orders, optimally utilizing market fluctuations. After one order is executed, a new one is automatically created with a recalculated price level. This approach allows for profit extraction both during market rises and falls, ensuring constant trading participation. Unlike the classic grid, the bot dynamically adapts order levels to current market conditions, making the strategy more effective in high volatility environments.",
