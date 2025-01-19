@@ -106,6 +106,8 @@
   "PricingPage": {
     "title": "Pricing",
     "page_description": "Choose a suitable pricing plan to access our bot.",
+    "pricing_plan": "Pricing plan",
+    "price": "Price",
     "one_month": "1 month",
     "three_months": "3 months",
     "six_months": "6 months",

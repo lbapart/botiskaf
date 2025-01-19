@@ -106,6 +106,8 @@
   "PricingPage": {
     "title": "Цены",
     "page_description": "Выберите подходящий тарифный план для доступа к нашему боту.",
+    "pricing_plan": "Тариф",
+    "price": "Стоимость",
     "one_month": "1 месяц",
     "three_months": "3 месяца",
     "six_months": "6 месяцев",

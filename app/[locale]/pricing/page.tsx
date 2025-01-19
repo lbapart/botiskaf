@@ -48,8 +48,8 @@ export default function PricingPage() {
               <table className="min-w-full border-collapse border border-gray-300">
                 <thead>
                   <tr>
-                    <th className="border border-gray-300 px-6 py-3 bg-gray-100 text-left text-lg font-semibold">Тариф</th>
-                    <th className="border border-gray-300 px-6 py-3 bg-gray-100 text-left text-lg font-semibold">Стоимость</th>
+                    <th className="border border-gray-300 px-6 py-3 bg-gray-100 text-left text-lg font-semibold">{t("pricing_plan")}</th>
+                    <th className="border border-gray-300 px-6 py-3 bg-gray-100 text-left text-lg font-semibold">{t("price")}</th>
                   </tr>
                 </thead>
                 <tbody>
