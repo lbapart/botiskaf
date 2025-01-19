@@ -32,8 +32,6 @@ export function MobileNav({ locale }: MobileNavProps) {
     },
     [setMetaColor, metaColor]
   )
-  console.log(pathname)
-  console.log(usePathname())
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerTrigger asChild>
