@@ -2,6 +2,8 @@
 
 Welcome to the Botiskaf website, your ultimate crypto trading assistant. This website provides valuable information about Botiskaf, its features, pricing plans, and more.
 
+Visit website: [www.botiskaf.com](https://www.botiskaf.com)
+
 ## Introduction
 
 Botiskaf is a powerful tool designed to automate your cryptocurrency trading. With Botiskaf, you can take advantage of market fluctuations and optimize your trading strategy.
