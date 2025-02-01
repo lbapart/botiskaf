@@ -15,5 +15,8 @@ export type Messages = {
     "useful-info": string;
     "useful-info_description": string;
     "useful-info_keywords": string;
+    statistics: string;
+    statistics_description: string;
+    statistics_keywords: string;
   };
   };

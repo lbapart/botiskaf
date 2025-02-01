@@ -18,7 +18,11 @@
 
     "useful-info": "Useful information",
     "useful-info_description": "Get valuable tips, resources, and guides on using Botiskaf and improving your crypto trading.",
-    "useful-info_keywords": "crypto trading tips, Botiskaf resources, trading guides, crypto bot information, useful crypto resources"
+    "useful-info_keywords": "crypto trading tips, Botiskaf resources, trading guides, crypto bot information, useful crypto resources",
+
+    "statistics": "Statistics",
+    "statistics_description": "Explore Botiskaf's monthly performance and detailed statistics to track its efficiency and user base.",
+    "statistics_keywords": "Botiskaf statistics, trading bot performance, monthly statistics, Botiskaf user base, trading bot efficiency"
   },
 
   "MainPage": {
@@ -136,5 +140,27 @@
     "telegram_bot_botiskaf": "Telegram bot Botiskaf",
     "support_at_telegram": "Support in Telegram",
     "telegram_channel": "Telegram channel"
+  },
+
+  "StatisticsPage": {
+    "statistics_by_year": "Statistics by Year",
+    "months_available": "months available",
+    "no_data_available": "No data available for this period",
+    "month": "Month",
+    "active_users": "Active Users",
+    "total_profit": "Total Profit",
+    "total_users": "Total Users",
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
   }
 }

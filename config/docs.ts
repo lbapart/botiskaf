@@ -27,5 +27,9 @@ export const docsConfig: DocsConfig = {
       title: "useful-info",
       href: "/useful-info",
     },
+    {
+      title: "statistics",
+      href: "/statistics",
+    },
   ]
 }
