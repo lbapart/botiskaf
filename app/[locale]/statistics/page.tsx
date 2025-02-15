@@ -96,7 +96,7 @@ export default function StatisticsPage() {
                               <TableCell className="font-medium">{t(stat.month)}</TableCell>
                               <TableCell className="text-right">{stat.users}</TableCell>
                               <TableCell className="text-right">
-                                {stat.profit.toLocaleString()}
+                                {stat.profit}
                               </TableCell>
                             </TableRow>
                           ))}
