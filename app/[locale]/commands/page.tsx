@@ -45,6 +45,8 @@ const commands = [
   { id: "set_language", title: "/set_language", description: "set_language_description" },
   { id: "buy_coin", title: "/buy_coin", description: "buy_coin_description" },
   { id: "help", title: "/help", description: "help_description" },
+  { id: "stats", title: "/stats", description: "stats_description" },
+  { id: "referral_code", title: "/referral_code", description: "referral_code_description" },
 ];
 
 export default function CommandsPage() {

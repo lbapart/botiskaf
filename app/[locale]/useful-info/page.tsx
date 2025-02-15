@@ -57,6 +57,20 @@ export default function UsefulInformationPage() {
         </section>
 
         <section>
+          {/* Реферальная система */}
+          <Card className="bg-white border border-gray-200 shadow-sm rounded-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-bold">{t("referral_system")}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4 text-sm text-gray-600">
+                {t("referral_system_description")}
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
           {/* Полезные ссылки */}
           <Card className="bg-white border border-gray-200 shadow-sm rounded-lg">
             <CardHeader>
