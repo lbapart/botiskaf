@@ -29,9 +29,6 @@ export async function generateMetadata({
 }
 
 export default function PricingPage() {
-  const monthlyPrice = 20; // Базовая цена за месяц
-  const threeMonthsPrice = monthlyPrice * 3 * 0.9; // Скидка 10% за 3 месяца
-  const sixMonthsPrice = monthlyPrice * 6 * 0.85; // Скидка 15% за 6 месяцев
   const t = useTranslations("PricingPage");
 
   return (
@@ -55,15 +52,15 @@ export default function PricingPage() {
                 <tbody>
                   <tr>
                     <td className="border border-gray-300 px-6 py-3">{t("one_month")}</td>
-                    <td className="border border-gray-300 px-6 py-3">${monthlyPrice.toFixed(2)}</td>
+                    <td className="border border-gray-300 px-6 py-3">{t("free")}</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-6 py-3">{t("three_months")} ({t("discount")} 10%)</td>
-                    <td className="border border-gray-300 px-6 py-3">${threeMonthsPrice.toFixed(2)}</td>
+                    <td className="border border-gray-300 px-6 py-3">{t("free")}</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-6 py-3">{t("six_months")} ({t("discount")} 15%)</td>
-                    <td className="border border-gray-300 px-6 py-3">${sixMonthsPrice.toFixed(2)}</td>
+                    <td className="border border-gray-300 px-6 py-3">{t("free")}</td>
                   </tr>
                 </tbody>
               </table>
