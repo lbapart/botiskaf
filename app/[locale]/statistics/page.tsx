@@ -24,6 +24,8 @@ const yearlyStats = {
   ],
   "2025": [
     { month: "Jan", users: 5, profit: 1140 },
+    { month: "Feb", users: 6, profit: 443 },
+    { month: "Mar", users: 6, profit: 1513 },
   ]
 };
 
