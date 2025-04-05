@@ -29,7 +29,7 @@ const yearlyStats = {
   ]
 };
 
-const totalUsers = 5;
+const totalUsers = 6;
 
 const calculateTotalProfit = (stats: Record<string, { month: string; users: number; profit: number }[]>) => {
   return Object.values(stats).flat().reduce((total, stat) => total + stat.profit, 0);
