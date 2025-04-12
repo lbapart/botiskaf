@@ -18,13 +18,7 @@ Botiskaf is a powerful tool designed to automate your cryptocurrency trading. Wi
 
 ## Pricing
 
-We offer various pricing plans to suit your needs. Choose a suitable plan to access our bot:
-
-| Pricing Plan     | Price       |
-|------------------|-------------|
-| One Month        | $20.00      |
-| Three Months     | $54.00 (10% discount) |
-| Six Months       | $102.00 (15% discount) |
+Free to use.
 
 ## Commands
 
